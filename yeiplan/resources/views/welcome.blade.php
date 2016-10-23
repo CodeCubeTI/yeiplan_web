@@ -1,7 +1,7 @@
 @extends('generals.main')
 
 @section('title_page')
-    <title>Yeiplan</title>
+    <title>Yeiplan | Inicio</title>
 @endsection
 @section('styles')
 @endsection
@@ -13,7 +13,7 @@
             <div class="section no-pad-bot">
                 <div class="container">
                     <br><br>
-                    <h1 class="header center teal-text text-lighten-2"><strong>Yeiplan</strong></h1>
+                    <h1 class="header center teal-text text-lighten-2"><img src="{{env('APP_URL')}}/images/logo_bannertrans_home.png" style="width: 100%"/></h1>
                     <div class="row center">
                         <h5 class="header col s12 light"><strong>Eventos exprés | Libérate del estrés</strong></h5>
                     </div>
@@ -26,10 +26,10 @@
                     <br><br>
                 </div>
             </div>
-            <div class="parallax"><img src="{{env('APP_URL')}}/images/parallax4.png" alt="Unsplashed background img 2" style="background-image: url(&quot;images/dream-infrared-meadow-2220-824x550.jpg&quot;); bottom: -241.193px; display: block; opacity: 0.7;"></div>
+            <div class="parallax"><img src="{{env('APP_URL')}}/images/parallax4.png" alt="Unsplashed background img 2" style="background-image: url(&quot;images/dream-infrared-meadow-2220-824x550.jpg&quot;); bottom: -241.193px; display: block; opacity: 0.4;"></div>
         </div>
-        <div class="container">
-            <div class="section">
+        <div class="container" >
+            <div class="section scrollspy" id="features">
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="icon-block">
@@ -84,13 +84,6 @@
                 </div>
             </div>
         </div>
-        <div class="container section scrollspy">
-            <div class="section">
-                <div class="center">
-                    <a class="#" href="#"><img src="{{env('APP_URL')}}/images/googleplay.png" style="width: 220px; height: 70px;"></a>
-                </div>
-            </div>
-        </div>
         <div class="parallax-container valign-wrapper section scrollspy" id="aboutus">
             <div class="section no-pad-bot">
                 <div class="container">
@@ -133,12 +126,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <a class="waves-effect waves-light waves-purple btn white lighten-1 black-text" href="#">Enviar Mensaje<i class="mdi-content-send right"></i></a>
-                            </div>
-                            <div class="row">
-                                <p>
-                                    (01) 477 ...
-                                </p>
+                                <a class="waves-effect waves-light btn purple lighten-1 white-text" href="#">Enviar Mensaje<i class="mdi-content-send right"></i></a>
                             </div>
                         </div>
                     </form>

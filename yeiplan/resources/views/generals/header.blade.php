@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-tap-highlight" content="no">
     <meta charset="UTF-8">
-    <link rel="icon" type="image/jpg" href="{{env('DOMAIN')}}images/logo.jpg" />
+    <link rel="icon" type="image/png" href="{{env('DOMAIN')}}images/logo_trans.png" />
 
     @yield('title_page')
 
