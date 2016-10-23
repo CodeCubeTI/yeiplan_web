@@ -20,4 +20,9 @@ class PackagesType extends Model
      */
 
     protected $fillable = [];
+
+    public function package() {
+        return $this->belongsTo('App\Package');
+    }
+
 }

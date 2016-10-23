@@ -20,4 +20,13 @@ class Service extends Model
      */
 
     protected $fillable = [];
+
+    public function packages() {
+        return $this->belongsToMany('App\Packages');
+    }
+
+    public function reservations() {
+        return $this->belongsToMany('App\Reservation');
+    }
+
 }

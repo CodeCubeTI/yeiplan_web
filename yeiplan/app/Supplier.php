@@ -20,4 +20,17 @@ class Supplier extends Model
      */
 
     protected $fillable = [];
+
+    public function address() {
+        return $this->hasOne('App\Address');
+    }
+
+    public function services() {
+        return $this->hasMany('App\Service');
+    }
+
+    public function user() {
+        return $this->belongsTo('App\User');
+    }
+
 }

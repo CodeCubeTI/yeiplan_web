@@ -20,4 +20,9 @@ class Billing extends Model
      */
 
     protected $fillable = [];
+
+    public function customer() {
+        return $this->belongsTo('App\Customer');
+    }
+
 }
