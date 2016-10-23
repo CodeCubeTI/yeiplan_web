@@ -25,7 +25,7 @@
                     <li><a class="waves-effect waves-light waves-white btn purple white-text" href="{{url('logout')}}">Regístrate</a></li>
                 @else
                     @include('generals.dropdown')
-                    <li><a class="black-text" href="#aboutus">Paquetes</a></li>
+                    <li><a class="black-text" href="{{route('package.index')}}">Paquetes</a></li>
                     <li><a class="black-text dropdown-button" href="#!" data-activates="dropdown">Servicios<i class="material-icons right">arrow_drop_down</i></a></li>
                     <li><a class="waves-effect waves-light waves-purple btn white black-text" href="{{url('logout')}}">Cerrar sesión</a></li>
                 @endif

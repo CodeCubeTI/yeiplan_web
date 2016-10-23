@@ -27,5 +27,14 @@ Route::get('getCardsPackages', 'RestController@getCardsPackages');
 Route::get('getServices/{type}', 'RestController@getServices');
 Route::get('getPackages/{type}', 'RestController@getPackages');
 
+Route::group(['middleware' => 'auth'], function() {
+
+    Route::group(['namespace'=>'Packages'], function() {
+        Route::pattern('package', '[0-9]+');
+        Route::resource('package', 'PackagesController');
+    });
+
+});
+
 
 
