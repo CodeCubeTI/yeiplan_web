@@ -6,6 +6,16 @@
 @section('styles')
 @endsection
 @section('scripts')
+    <script>
+        $(document).ready(function(){
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+
+            $('.collapsible').collapsible({
+                accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+        });
+    </script>
 @endsection
 @section('content')
     {!! Form::open(['route' => 'services', 'method' =>'get']) !!}
@@ -17,23 +27,21 @@
     <div class="row">
 
     @foreach($services as $service)
-
         <div class="col s12 m3">
-                <div class="card medium">
-                    <div class="card-image">
-                        <img src="{{$service->image_service_url}}">
-                        <span class="card-title">{{ $service->service_name }}</span>
-                    </div>
-                    <div class="card-content">
-                        <p>{{$service->description_short}}</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Ver más</a>
-                    </div>
+            <div class="card medium">
+                <div class="card-image">
+                    <img src="{{$service->image_service_url}}">
+                    <span class="card-title">{{ $service->service_name }}</span>
+                </div>
+                <div class="card-content">
+                    <p>{{$service->description_short}}</p>
+                </div>
+                <div class="card-action">
+                    <a data-target="detail_{{$service->id}}" class="modal-trigger" href="#detail_{{$service->id}}">Ver más</a>
                 </div>
             </div>
-
-
+        </div>
+        @include('searcher.partials.modal')
     @endforeach
 
 </div>
