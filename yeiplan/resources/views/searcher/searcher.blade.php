@@ -32,3 +32,6 @@
 
 </div>
 @endsection
+@section('searcher')
+    @include('generals.nav_search')
+@endsection

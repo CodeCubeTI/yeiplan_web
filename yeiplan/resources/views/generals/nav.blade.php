@@ -8,7 +8,10 @@
                 <li><div class="waves-effect waves-light waves-purple"><a class="black-text" href="#contactus">Contáctanos</a></div></li>
                 <li><div class="divider"></div></li>
                 <li><a class="black-text" href="{{url('logout')}}">Cerrar sesión</a></li>
+
             </ul>
+            @yield('searcher')
+
             <ul class="right hide-on-med-and-down">
                 <li><a class="black-text" href="#features">Características</a></li>
                 <li><a class="black-text" href="#aboutus">Nostros</a></li>
@@ -18,17 +21,8 @@
             </ul>
             <a href="#" data-activates="slide-out" class="button-collapse black-text text-accent-4"><i class="material-icons">menu</i></a>
         </div>
+
     </nav>
 </div>
 
-<nav>
-    <div class="nav-wrapper">
-        <form>
-            <div class="input-field">
-                <input id="search" type="search" required>
-                <label for="search"><i class="material-icons">search</i></label>
-                <i class="material-icons">close</i>
-            </div>
-        </form>
-    </div>
-</nav>
+
