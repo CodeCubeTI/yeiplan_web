@@ -4,7 +4,7 @@
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
             <div class="row">
                 <div class="input-field col s12 center">
-                    <img src="{{env('APP_URL')}}/images/logo_trans.png" class="responsive-img valign profile-image-login">
+                    <img src="{{env('APP_URL')}}/images/logo_final.png" class="responsive-img valign profile-image-login">
                     <p class="center login-form-text">{{env('APP_NAME')}}</p>
                 </div>
             </div>
