@@ -17,13 +17,12 @@
                     <div class="row center">
                         <h5 class="header col s12 light"><strong>Eventos exprés | Libérate del estrés</strong></h5>
                     </div>
-                    <form>
-                        <div class="input-field">
-                            <input id="search" type="search" required>
-                            <label for="search"><i class="material-icons">search</i></label>
-                            <i class="material-icons">close</i>
+                    {!! Form::open(['route' => 'services', 'method' => 'get']) !!}
+                        <div class="input-field col s6" placeholder="place">
+                            <i class="material-icons prefix">search</i>
+                            <input id="icon_prefix" type="text" class="validate" name="st">
                         </div>
-                    </form>
+                    {!! Form::close() !!}
                     <br><br>
                 </div>
             </div>

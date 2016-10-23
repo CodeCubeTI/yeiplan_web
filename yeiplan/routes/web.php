@@ -20,6 +20,8 @@ Route::get('logout', 'Auth\LoginController@logout');
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('services', ['as' => 'services', 'uses' => 'ServicesController@getServices']);
+
 Route::get('getCardsServices', 'RestController@getCardsServices');
 Route::get('getCardsPackages', 'RestController@getCardsPackages');
 Route::get('getServices/{type}', 'RestController@getServices');
