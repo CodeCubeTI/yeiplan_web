@@ -18,6 +18,7 @@
 
     @foreach($services as $service)
 
+
         <div class="col s12 m3">
                 <div class="card medium">
                     <div class="card-image">
@@ -29,6 +30,7 @@
                     </div>
                     <div class="card-action">
                         <a href="#">Ver más</a>
+                        <a href="{{route('payment', [$service->price, $service->service_name])}}">Comprar</a>
                     </div>
                 </div>
             </div>
