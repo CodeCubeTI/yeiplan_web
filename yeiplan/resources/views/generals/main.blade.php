@@ -13,7 +13,7 @@
 <script type="text/javascript" src="{{env('DOMAIN')}}js/materialize.min.js"></script>
 <script type="text/javascript" src="{{env('DOMAIN')}}js/materialize.js"></script>
 <script type="text/javascript" src="{{env('DOMAIN')}}js/init.js"></script>
-<script type="text/javascript" src="{{env('DOMAIN')}}js/plugins.min.js"></script>
+<script type="text/javascript" src="{{env('DOMAIN')}}js/plugins.js"></script>
 <script>
     $(document).ready(function(){
         $('.parallax').parallax();
