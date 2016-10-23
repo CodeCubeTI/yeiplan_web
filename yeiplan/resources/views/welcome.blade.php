@@ -13,7 +13,7 @@
             <div class="section no-pad-bot">
                 <div class="container">
                     <br><br>
-                    <h1 class="header center teal-text text-lighten-2"><img src="{{env('APP_URL')}}/images/logo_bannertrans_home.png" style="width: 100%"/></h1>
+                    <h1 class="header center teal-text text-lighten-2"><img src="{{env('APP_URL')}}/images/logo_bannertrans.png" style="width: 100%"/></h1>
                     <div class="row center">
                         <h5 class="header col s12 light"><strong>Eventos exprés | Libérate del estrés</strong></h5>
                     </div>
