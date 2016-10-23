@@ -21,6 +21,7 @@ Route::get('logout', 'Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index');
 
 Route::get('services', ['as' => 'services', 'uses' => 'ServicesController@getServices']);
+Route::get('payment/{price}/{service_name}', ['as' => 'payment', 'uses' => 'PaymentsController@comproPago']);
 
 Route::get('getCardsServices', 'RestController@getCardsServices');
 Route::get('getCardsPackages', 'RestController@getCardsPackages');
