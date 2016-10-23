@@ -12,12 +12,11 @@ class PackagesTypesSeeder extends Seeder
     public function run()
     {
         $faker = Faker\Factory::create();
-        for ($i = 1; $i <= 5; $i++) {
             \DB::table('packagestypes')->insert([
                 'name_type' => $faker->userName,
-                'image_card_url' => 'http://lorempixel.com/400/200/abstract/0/',
+                'image_card_url' => 'img/P05.png',
                 'created_at' => $faker->dateTime
             ]);
-        }
+
     }
 }

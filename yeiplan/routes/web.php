@@ -19,4 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('getCardsServices', 'RestController@getCardsServices');
+Route::get('getCardsPackages', 'RestController@getCardsPackages');
+
+
 
