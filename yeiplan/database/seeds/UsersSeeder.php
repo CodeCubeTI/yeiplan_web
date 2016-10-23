@@ -16,7 +16,7 @@ class UsersSeeder extends Seeder
             \DB::table('users')->insert([
                 'name' => $faker->userName,
                 'email' => $faker->email,
-                'password' => encrypt('123456'),
+                'password' => \Illuminate\Support\Facades\Hash::make('123456'),
                 'created_at' => $faker->date('Y-m-d')
             ]);
         }

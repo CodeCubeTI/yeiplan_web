@@ -15,6 +15,7 @@ class SuppliersSeeder extends Seeder
         $j = 0;
         for ($i = 1; $i <= 5; $i++) {
             \DB::table('suppliers')->insert([
+                'user_id' => $i,
                 'company_name' => $faker->company,
                 'representative_name' => $faker->name,
                 'phone' => $faker->phoneNumber,
