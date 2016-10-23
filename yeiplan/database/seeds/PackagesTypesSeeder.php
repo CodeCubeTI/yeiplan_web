@@ -13,7 +13,7 @@ class PackagesTypesSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
             \DB::table('packagestypes')->insert([
-                'name_type' => $faker->userName,
+                'name_type' => "Express",
                 'image_card_url' => 'img/P05.png',
                 'created_at' => $faker->dateTime
             ]);

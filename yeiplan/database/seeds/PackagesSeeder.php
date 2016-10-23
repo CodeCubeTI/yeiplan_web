@@ -19,7 +19,7 @@ class PackagesSeeder extends Seeder
                 'image_package_url' => 'http://lorempixel.com/400/200/abstract/0/',
                 'description_short' => $faker->realText(100),
                 'description' => $faker->realText(300),
-                'packagestype_id' => $faker->numberBetween(1, 5),
+                'packagestype_id' => 1,
                 'created_at' => $faker->date('Y-m-d')
             ]);
         }
