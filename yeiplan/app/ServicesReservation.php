@@ -4,14 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ServicePackage extends Model
+class ServiceReservation extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'servicespackages';
+    protected $table = 'servicesreservations';
 
     /**
      * The attributes that are mass assignable.
@@ -20,4 +20,13 @@ class ServicePackage extends Model
      */
 
     protected $fillable = [];
+
+    public function service() {
+        return $this->hasOne('App\Service');
+    }
+
+    public function reservation() {
+        return $this->hasOne('App\Reservation');
+    }
+
 }

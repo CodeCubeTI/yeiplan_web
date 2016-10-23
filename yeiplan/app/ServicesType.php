@@ -20,4 +20,9 @@ class ServicesType extends Model
      */
 
     protected $fillable = [];
+
+    public function service() {
+        return $this->belongsTo('App\Service');
+    }
+
 }

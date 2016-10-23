@@ -20,4 +20,13 @@ class Package extends Model
      */
 
     protected $fillable = [];
+
+    public function services() {
+        return $this->belongsToMany('App\Service');
+    }
+
+    public function packagestype() {
+        return $this->hasOne('App\PackagesType');
+    }
+
 }
