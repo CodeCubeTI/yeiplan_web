@@ -15,7 +15,7 @@
     <link href="css/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
 </head>
 
-<body class="teal lighten-2">
+<body class="green accent-2">
 
 @include('auth.partials.inputs')
 

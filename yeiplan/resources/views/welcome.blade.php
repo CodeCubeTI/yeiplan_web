@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <p class="center"><i class="material-icons large cyan-text">sentiment_very_satisfied</i></p>
+                            <p class="center"><i class="material-icons large green-text text-accent-2">sentiment_very_satisfied</i></p>
                             <h2 class="center" style="color:#333"><i class="mdi-av-new-releases"></i></h2>
                             <h5 class="center">¡Libérate del estrés!</h5>
                             <p class="light">No te desgastes ni te estreses a la hora de planear tu evento, nosotros lo hacemos por ti.</p>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <p class="center"><i class="material-icons large cyan-text">alarm</i></p>
+                            <p class="center"><i class="material-icons large green-text text-accent-2">alarm</i></p>
                             <h2 class="center" style="color:#333"><i class="mdi-hardware-cast"></i></h2>
                             <h5 class="center">¡Ahorra tiempo y energia!</h5>
                             <p class="light">Yeiplan te brinda de manera rápida y directa todo lo que necesitas para planear tu evento. </p>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <p class="center"><i class="material-icons large cyan-text">monetization_on</i></p>
+                            <p class="center"><i class="material-icons large green-text text-accent-2">monetization_on</i></p>
                             <h2 class="center" style="color:#333"><i class="mdi-hardware-keyboard-alt"></i></h2>
                             <h5 class="center">¿Forma de pago?...</h5>
                             <p class="light"><strong>¡No te preocupes!</strong> Nuestro sistema te permite pagar con tarjeta o efectivo. </p>
@@ -60,7 +60,7 @@
                 <div class="row">
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <p class="center"><i class="material-icons large cyan-text">star</i></p>
+                            <p class="center"><i class="material-icons large green-text text-accent-2">star</i></p>
                             <h2 class="center" style="color:#333"><i class="mdi-hardware-keyboard-alt"></i></h2>
                             <h5 class="center">¿Quieres algo aún más simple?</h5>
                             <p class="light">Nosotros tenemos paquetes básicos para cubrir diferentes celebraciones.</p>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <p class="center"><i class="material-icons large cyan-text">palette</i></p>
+                            <p class="center"><i class="material-icons large green-text text-accent-2">palette</i></p>
                             <h2 class="center" style="color:#333"><i class="mdi-hardware-keyboard-alt"></i></h2>
                             <h5 class="center">¿Quieres personalizar tu evento?</h5>
                             <p class="light">Nosotros te ayudamos a plasmar tu estilo con detalles hechos a tu medida. </p>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="col s12 m4">
                         <div class="icon-block">
-                            <p class="center"><i class="material-icons large cyan-text">shopping_cart</i></p>
+                            <p class="center"><i class="material-icons large green-text text-accent-2">shopping_cart</i></p>
                             <h2 class="center" style="color:#333"><i class="mdi-hardware-keyboard-alt"></i></h2>
                             <h5 class="center">¡Crea tu propio paquete!</h5>
                             <p class="light">Hazlo en base a tu presupuesto y/o gustos.</p>
