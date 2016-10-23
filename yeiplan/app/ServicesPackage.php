@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ServicePackage extends Model
+class ServicesPackage extends Model
 {
     /**
      * The database table used by the model.
