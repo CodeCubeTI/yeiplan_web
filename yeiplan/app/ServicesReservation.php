@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ServiceReservation extends Model
+class ServicesReservation extends Model
 {
     /**
      * The database table used by the model.
