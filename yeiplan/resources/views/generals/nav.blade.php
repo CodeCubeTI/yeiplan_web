@@ -1,7 +1,7 @@
 <div id="navbar" class="navbar-fixed scrollspy">
     <nav class="green accent-2">
         <div class="nav-wrapper container">
-            <div class="container black-text left"> <a href="{{url('/')}}" class="black-text brand-logo"><img src="{{env('APP_URL')}}/images/logo_trans2.png" style="width: 60px; height: 60px;" /></a></div>
+            <div class="black-text left"> <a href="{{url('/')}}" class="black-text brand-logo"><img src="{{env('APP_URL')}}/images/logo_trans2.png" style="width: 60px; height: 60px;" /></a></div>
             <ul class="right side-nav" id="slide-out">
                 @if(is_null(Auth::user()))
                     <li><div class="waves-effect waves-light waves-purple"><a class="black-text" href="#features">Características</a></div></li>

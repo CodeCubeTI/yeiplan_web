@@ -18,9 +18,9 @@
                         <h5 class="header col s12 light"><strong>Eventos exprés | Libérate del estrés</strong></h5>
                     </div>
                     {!! Form::open(['route' => 'services', 'method' => 'get']) !!}
-                        <div class="input-field col s6" placeholder="place">
+                        <div class="input-field col s6" >
                             <i class="material-icons prefix">search</i>
-                            <input id="icon_prefix" type="text" class="validate" name="st">
+                            <input id="icon_prefix" type="text" class="validate black-text" name="st" placeholder="Comida, Decoración, Mobiliario">
                         </div>
                     {!! Form::close() !!}
                     <br><br>

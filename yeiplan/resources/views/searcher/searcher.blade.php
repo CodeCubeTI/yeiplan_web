@@ -8,6 +8,12 @@
 @section('scripts')
 @endsection
 @section('content')
+    {!! Form::open(['route' => 'services', 'method' =>'get']) !!}
+    <div class="input-field col s12" placeholder="place">
+        <i class="material-icons prefix">search</i>
+        <input id="icon_prefix" type="text" class="validate" name="st" value="{{$st}}">
+    </div>
+    {!! Form::close() !!}
     <div class="row">
 
     @foreach($services as $service)

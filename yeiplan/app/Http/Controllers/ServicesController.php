@@ -10,8 +10,9 @@ use App\Http\Requests;
 class ServicesController extends Controller
 {
     public function getServices(Request $request){
-        $services = Service::filterAndPaginate($request->get('st'));
+        $st = $request->get('st');
+        $services = Service::filterAndPaginate($st);
 
-        return view('searcher.searcher', compact('services'));
+        return view('searcher.searcher', compact('services', 'st'));
     }
 }
