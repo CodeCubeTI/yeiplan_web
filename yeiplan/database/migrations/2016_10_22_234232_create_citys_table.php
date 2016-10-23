@@ -13,13 +13,12 @@ class CreateCitysTable extends Migration
      */
     public function up()
     {
-        Schema::create('citys', function(Blueprint $table)
-        {
-            $table->increments('id');
+        Schema::create('citys', function(Blueprint $table) {
+            $table->bigIncrements('id');
             $table->string('name',50);
             $table->string('code',10)->nullable();
             $table->string('abbreviation',10)->nullable();
-            $table->integer('state_id')->unsigned();
+            $table->bigInteger('state_id')->unsigned();
             $table->timestamps();
             $table->foreign('state_id')->references('id')
                 ->on('states')->onDelete('cascade')->onUpdate('cascade');
