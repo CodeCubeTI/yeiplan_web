@@ -38,6 +38,7 @@
                 </div>
                 <div class="card-action">
                     <a data-target="detail_{{$service->id}}" class="modal-trigger" href="#detail_{{$service->id}}">Ver más</a>
+                    <a href="{{route('payment', [$service->price, $service->service_name])}}">Comprar</a>
                 </div>
             </div>
         </div>
