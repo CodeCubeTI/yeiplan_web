@@ -18,8 +18,8 @@ class CreatePackagesTable extends Migration
             $table->string('package_name');
             $table->double('price');
             $table->string('image_package_url');
-            $table->string('description_short');
-            $table->string('description');
+            $table->string('description_short', 120);
+            $table->string('description', 500);
             $table->bigInteger('packagestype_id')->unsigned();
             $table->foreign('packagestype_id')->references('id')->on('packagestypes');
             $table->timestamps();
