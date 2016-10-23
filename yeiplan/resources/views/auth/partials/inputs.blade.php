@@ -4,8 +4,8 @@
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
             <div class="row">
                 <div class="input-field col s12 center">
-                    <img src="images/logo.jpg" alt="" class="circle responsive-img valign profile-image-login">
-                    <p class="center login-form-text">{{env('AppName')}}</p>
+                    <img src="{{env('APP_URL')}}/images/logoY.png" alt="" class="circle responsive-img valign profile-image-login">
+                    <p class="center login-form-text">{{env('APP_NAME')}}</p>
                 </div>
             </div>
             @include('auth.partials.messages')
