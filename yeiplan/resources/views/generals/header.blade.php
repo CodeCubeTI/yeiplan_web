@@ -23,6 +23,10 @@
         main {
             flex: 1 0 auto;
         }
+
+        .parallax-container {
+            height: 100%;
+        }
     </style>
     @yield('styles')
 
