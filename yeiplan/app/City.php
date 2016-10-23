@@ -20,4 +20,9 @@ class City extends Model
      */
 
     protected $fillable = [];
+
+    public function state() {
+        return $this->belongsTo('App\State');
+    }
+
 }

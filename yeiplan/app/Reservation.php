@@ -20,4 +20,13 @@ class Reservation extends Model
      */
 
     protected $fillable = [];
+
+    public function customer() {
+        return $this->hasOne('App\Customer');
+    }
+
+    public function services() {
+        return $this->belongsToMany('App\ServicesReservation');
+    }
+
 }

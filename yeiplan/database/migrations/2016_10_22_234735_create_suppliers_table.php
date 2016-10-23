@@ -15,6 +15,7 @@ class CreateSuppliersTable extends Migration
     {
         Schema::create('suppliers', function(Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bigInteger('user_id')->unsigned();
             $table->string('company_name')->nullable();
             $table->string('representative_name')->nullable();
             $table->string('phone');
@@ -24,6 +25,7 @@ class CreateSuppliersTable extends Migration
             $table->string('website');
             $table->string('facebook');
             $table->string('twitter');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('address_id')->references('id')->on('addresses');
             $table->timestamps();
         });
