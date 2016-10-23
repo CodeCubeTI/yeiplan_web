@@ -20,7 +20,7 @@ class ServicesSeeder extends Seeder
                 'image_service_url' => 'http://lorempixel.com/400/200/city/0/',
                 'description_short' => $faker->realText(100),
                 'description' => $faker->realText(250),
-                'servicestype_id' => $faker->numberBetween(1, 5),
+                'servicestype_id' => $faker->numberBetween(1, 4),
                 'supplier_id' => $faker->numberBetween(1, 5),
                 'created_at' => $faker->date('Y-m-d')
             ]);
