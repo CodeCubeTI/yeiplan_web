@@ -29,4 +29,8 @@ class Service extends Model
         return $this->belongsToMany('App\Reservation');
     }
 
+    public static function filterAndPaginate($st){
+        return Service::join('servicestypes', 'servicestypes.id', '=', 'servicestype_id')
+            ->where('name_type', '=', $st)->paginate();
+    }
 }
