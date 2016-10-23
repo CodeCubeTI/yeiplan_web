@@ -14,7 +14,7 @@ class PackagesSeeder extends Seeder
         $faker = Faker\Factory::create();
         for ($i = 1; $i <= 15; $i++) {
             \DB::table('packages')->insert([
-                'package_name' => $faker->name,
+                'package_name' => "Express",
                 'price' => $faker->randomNumber(),
                 'image_package_url' => 'http://lorempixel.com/400/200/abstract/0/',
                 'description_short' => $faker->realText(100),
