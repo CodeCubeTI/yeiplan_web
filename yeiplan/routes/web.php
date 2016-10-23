@@ -22,6 +22,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('getCardsServices', 'RestController@getCardsServices');
 Route::get('getCardsPackages', 'RestController@getCardsPackages');
+Route::get('getServices/{type}', 'RestController@getServices');
+Route::get('getPackages/{type}', 'RestController@getPackages');
 
 
 
