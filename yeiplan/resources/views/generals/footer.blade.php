@@ -1,4 +1,4 @@
-<footer class="page-footer">
+<footer class="page-footer green accent-3">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -18,8 +18,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            © 2016 Yeiplan. Derechos reservados
         </div>
     </div>
 </footer>
